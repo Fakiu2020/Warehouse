@@ -1,0 +1,334 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Create Warehouse </strong>
+        </div>
+        <div class="card-body">
+          <form
+            [formGroup]="createProductForm"
+            (ngSubmit)="create()"
+            #ngForm="ngForm"
+          >
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-col-form-label is-required">Code</label>
+                  <input
+                    [ngClass]="{
+                      'is-invalid':
+                        createProductForm.controls.code.errors &&
+                        ngForm.submitted
+                    }"
+                    type="text"
+                    formControlName="code"
+                    class="form-control"
+                  />
+
+                  <div
+                    class="invalid-feedback"
+                    *ngIf="
+                      createProductForm.controls.code.errors && ngForm.submitted
+                    "
+                  >
+                    This field is required.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-col-form-label is-required">Name</label>
+                  <input
+                    [ngClass]="{
+                      'is-invalid':
+                        createProductForm.controls.name.errors &&
+                        ngForm.submitted
+                    }"
+                    type="text"
+                    formControlName="name"
+                    class="form-control"
+                  />
+
+                  <div
+                    class="invalid-feedback"
+                    *ngIf="
+                      createProductForm.controls.name.errors &&
+                      ngForm.submitted
+                    "
+                  >
+                  This field is required.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group ">
+                  <label class="form-col-form-label is-required">Address</label>
+                  
+                  <div class="input-group mb-3">
+                    <input
+                    [ngClass]="{
+                      'is-invalid':
+                        (createProductForm.controls.latitude.errors || 
+                        createProductForm.controls.longitude.errors || 
+                        createProductForm.controls.address.errors) &&
+                        ngForm.submitted
+                    }"
+                    type="text"
+                    formControlName="address"
+                    class="form-control"
+                  />  
+                    <button class="btn btn-outline-primary ml-1"  [disabled]="!createProductForm.controls['address'].value" type="button" (click)="validateAddress()" id="button-addon2">Validate
+                      <i *ngIf="!checkingAddressLocation" class="fa fa-check"></i>
+                      <i *ngIf="checkingAddressLocation" class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size: 20px"></i>
+                    </button>
+                  </div>
+                    
+
+
+                  <div
+                    class="invalid-feedback"
+                    *ngIf="(createProductForm.controls.latitude.errors || 
+                    createProductForm.controls.longitude.errors || 
+                    createProductForm.controls.address.errors) &&
+                    ngForm.submitted"
+                  >
+                    This field is required.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-col-form-label is-required">State</label>
+                  <input
+                    [ngClass]="{
+                      'is-invalid':
+                        createProductForm.controls.state.errors &&
+                        ngForm.submitted
+                    }"
+                    type="text"
+                    formControlName="state"
+                    class="form-control"
+                  />  
+            
+                  <div
+                    class="invalid-feedback"
+                    *ngIf="
+                      createProductForm.controls.state.errors &&
+                      ngForm.submitted
+                    "
+                  >
+                    This field is required.
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-col-form-label ">County</label>
+                  <input
+                    [ngClass]="{
+                      'is-invalid':
+                        createProductForm.controls.county.errors &&
+                        ngForm.submitted
+                    }"
+                    type="text"
+                    formControlName="county"
+                    class="form-control"
+                  />  
+            
+                  <div
+                    class="invalid-feedback"
+                    *ngIf="
+                      createProductForm.controls.county.errors &&
+                      ngForm.submitted
+                    "
+                  >
+                  This field is required.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-col-form-label">Zip</label>
+                  <input
+                    [ngClass]="{
+                      'is-invalid':
+                        createProductForm.controls.zip.errors &&
+                        ngForm.submitted
+                    }"
+                    type="text"
+                    formControlName="zip"
+                    class="form-control"
+                  />  
+            
+                  <div
+                    class="invalid-feedback"
+                    *ngIf="
+                      createProductForm.controls.zip.errors &&
+                      ngForm.submitted
+                    "
+                  >
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="file">File</label>
+                  <input 
+                      id="file" 
+                      type="file" 
+                      class="form-control"
+                      (change)="onFileChange($event)">
+                  
+              </div>
+              </div>
+
+            </div>                 
+
+            <div class="row">
+              <div class="col-12 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+                <button
+                  [disabled]="isLoading"
+                  type="submit"
+                  class="btn btn-primary float-right ml-1"
+                >
+                  <i *ngIf="!isLoading" class="fa fa-save"></i>
+                  <i
+                    *ngIf="isLoading"
+                    class="fa fa-spinner fa-spin fa-3x fa-fw"
+                    style="font-size: 20px"
+                  ></i>
+                  &nbsp;Save
+                </button>
+                <a
+                  routerLink="/warehouse"
+                  type="button"
+                  class="btn btn-secondary float-right"
+                  ><i class="fa fa-close"></i>&nbsp;Cancel</a
+                >
+              </div>
+            </div>
+          </form>
+
+          <br/>
+
+          <div *ngIf="resultAddress.name" class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header font-weight-bold">
+                  Can you confirm the location?
+                </div>
+                <div class="card-body">
+                 
+                  <br>
+                  <table class="table table-responsive-sm table-hover table-outline mb-0">
+                    <thead class="thead-light">
+                      <tr>
+                        
+                        <th>Address</th>
+                        
+                        <th class="text-center">Postal Code</th>
+                        <th class="text-center">District</th>
+                        <th>Activity</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngIf="!resultAddress.address && !isLoading">
+                        <td class="text-center" colspan="6">
+        
+                          <strong>Not results</strong>
+        
+                        </td>
+                      </tr>
+        
+                      <tr *ngIf="isLoading">
+                        <td class="text-center" colspan="6">
+                          
+                          <strong>Loading...</strong>
+                        </td>
+                      </tr>
+        
+                      <tr>
+                        
+                        <td>
+                          <div>{{resultAddress.address.formattedAddress}}</div>
+                          <div class="small text-muted">
+                            <i class="icon-location-pin"></i> <span>{{resultAddress.address.countryRegion}}, </span>
+                            {{resultAddress.address.locality}}
+                          </div>
+                        </td>
+            
+                        <td class="text-center">
+                            <div >
+                              {{resultAddress.address.postalCode}}
+                          </div>
+                        </td>
+                        <td class="text-center">
+                          {{resultAddress.address.adminDistrict}}
+                        </td>
+        
+        
+        
+                        <td>
+                          <button (click)="confirmAddress()" [disabled]="isConfirmOriginLocation" type="button" class="btn btn-block btn-outline-primary">Confirm</button>
+                        </td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div><!--/.col-->
+          </div><!--/.row-->
+
+          <div class="row" *ngIf="resultAddress.name">
+            <div class="col-md-12">
+              <agm-map 
+                [latitude]="resultAddress.lat"
+                [longitude]="resultAddress.lng"
+                [zoom]="zoom"
+                [disableDefaultUI]="false"
+                [zoomControl]="true"
+                (mapClick)="mapClicked($event)">
+        
+                  <agm-marker 
+                      
+                      (markerClick)="clickedMarker(m.name, i)"
+                      [latitude]="resultAddress.lat"
+                      [longitude]="resultAddress.lng"
+                      
+                      [markerDraggable]="true"
+                      (dragEnd)="markerDragEnd(resultAddress, $event)">
+                
+                              
+                  </agm-marker>
+          
+        
+              </agm-map>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+</div>

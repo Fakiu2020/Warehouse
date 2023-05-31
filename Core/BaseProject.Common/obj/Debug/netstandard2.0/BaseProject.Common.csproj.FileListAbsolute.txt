@@ -1,0 +1,14 @@
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\bin\Debug\netstandard2.0\BaseProject.Common.deps.json
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\bin\Debug\netstandard2.0\BaseProject.Common.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\bin\Debug\netstandard2.0\BaseProject.Common.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\bin\Debug\netstandard2.0\Whoever.Common.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Core.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\bin\Debug\netstandard2.0\Whoever.Common.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Core.xml
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\obj\Debug\netstandard2.0\BaseProject.Common.csprojAssemblyReference.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\obj\Debug\netstandard2.0\BaseProject.Common.csproj.CoreCompileInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\obj\Debug\netstandard2.0\BaseProject.Common.AssemblyInfoInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\obj\Debug\netstandard2.0\BaseProject.Common.AssemblyInfo.cs
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\obj\Debug\netstandard2.0\BaseProject.Common.csproj.CopyComplete
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\obj\Debug\netstandard2.0\BaseProject.Common.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Common\obj\Debug\netstandard2.0\BaseProject.Common.pdb

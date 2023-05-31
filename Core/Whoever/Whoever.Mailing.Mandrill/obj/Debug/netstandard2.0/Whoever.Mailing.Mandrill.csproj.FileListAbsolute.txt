@@ -1,0 +1,12 @@
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\bin\Debug\netstandard2.0\Whoever.Mailing.Mandrill.deps.json
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\bin\Debug\netstandard2.0\Whoever.Mailing.Mandrill.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\bin\Debug\netstandard2.0\Whoever.Mailing.Mandrill.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\bin\Debug\netstandard2.0\Whoever.Mailing.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\bin\Debug\netstandard2.0\Whoever.Mailing.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\obj\Debug\netstandard2.0\Whoever.Mailing.Mandrill.csprojAssemblyReference.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\obj\Debug\netstandard2.0\Whoever.Mailing.Mandrill.csproj.CoreCompileInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\obj\Debug\netstandard2.0\Whoever.Mailing.Mandrill.AssemblyInfoInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\obj\Debug\netstandard2.0\Whoever.Mailing.Mandrill.AssemblyInfo.cs
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\obj\Debug\netstandard2.0\Whoever.Mailing.Mandrill.csproj.CopyComplete
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\obj\Debug\netstandard2.0\Whoever.Mailing.Mandrill.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing.Mandrill\obj\Debug\netstandard2.0\Whoever.Mailing.Mandrill.pdb

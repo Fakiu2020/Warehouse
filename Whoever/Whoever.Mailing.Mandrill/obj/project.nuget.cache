@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "3LNFxRZxyD2z9Mbi3eFxpMk9L56b6QFrbaU5hZGxO8N8lqMYR7+RUdQARxmNKoYCA9Dd2GcLmVqaXZiXpD/ejw==",
+  "success": true,
+  "projectFilePath": "D:\\Development\\Warehouse\\Whoever\\Whoever.Mailing.Mandrill\\Whoever.Mailing.Mandrill.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\mandrill.net\\6.0.0\\mandrill.net.6.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

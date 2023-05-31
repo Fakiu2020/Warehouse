@@ -1,0 +1,196 @@
+<div class="animated fadeIn">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <strong>Edit Warehouse </strong>
+          </div>
+          <div class="card-body" *ngIf="editProductForm">
+            <form [formGroup]="editProductForm" (ngSubmit)="update()" #ngForm="ngForm">
+  
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="form-col-form-label is-required">Code</label>
+                    <input
+                      [ngClass]="{
+                        'is-invalid':
+                        editProductForm.controls.code.errors &&
+                          ngForm.submitted
+                      }"
+                      type="text"
+                      formControlName="code"
+                      class="form-control"
+                    />
+  
+                    <div
+                      class="invalid-feedback"
+                      *ngIf="
+                      editProductForm.controls.code.errors && ngForm.submitted
+                      "
+                    >
+                      This field is required.
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="form-col-form-label is-required">Name</label>
+                    <input
+                      [ngClass]="{
+                        'is-invalid':
+                        editProductForm.controls.name.errors &&
+                          ngForm.submitted
+                      }"
+                      type="text"
+                      formControlName="name"
+                      class="form-control"
+                    />
+  
+                    <div
+                      class="invalid-feedback"
+                      *ngIf="
+                      editProductForm.controls.name.errors &&
+                        ngForm.submitted
+                      "
+                    >
+                    This field is required.
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="form-col-form-label is-required">Address</label>
+                    <input
+                      [ngClass]="{
+                        'is-invalid':
+                        editProductForm.controls.address.errors &&
+                          ngForm.submitted
+                      }"
+                      type="text"
+                      formControlName="address"
+                      class="form-control"
+                    />  
+              
+                    <div
+                      class="invalid-feedback"
+                      *ngIf="
+                      editProductForm.controls.address.errors &&
+                        ngForm.submitted
+                      "
+                    >
+                      This field is required.
+                    </div>
+                  </div>
+                </div>
+  
+  
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="form-col-form-label is-required">State</label>
+                    <input
+                      [ngClass]="{
+                        'is-invalid':
+                        editProductForm.controls.state.errors &&
+                          ngForm.submitted
+                      }"
+                      type="text"
+                      formControlName="state"
+                      class="form-control"
+                    />  
+              
+                    <div
+                      class="invalid-feedback"
+                      *ngIf="
+                      editProductForm.controls.state.errors &&
+                        ngForm.submitted
+                      "
+                    >
+                      This field is required.
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+  
+  
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="form-col-form-label ">County</label>
+                    <input
+                      [ngClass]="{
+                        'is-invalid':
+                        editProductForm.controls.county.errors &&
+                          ngForm.submitted
+                      }"
+                      type="text"
+                      formControlName="county"
+                      class="form-control"
+                    />  
+              
+                    <div
+                      class="invalid-feedback"
+                      *ngIf="
+                      editProductForm.controls.county.errors &&
+                        ngForm.submitted
+                      "
+                    >
+                    This field is required.
+                    </div>
+                  </div>
+                </div>
+  
+  
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="form-col-form-label">Zip</label>
+                    <input
+                      [ngClass]="{
+                        'is-invalid':
+                        editProductForm.controls.zip.errors &&
+                          ngForm.submitted
+                      }"
+                      type="text"
+                      formControlName="zip"
+                      class="form-control"
+                    />  
+              
+                    <div
+                      class="invalid-feedback"
+                      *ngIf="
+                      editProductForm.controls.zip.errors &&
+                        ngForm.submitted
+                      "
+                    >
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+  
+  
+              <div class="row">
+                <div class="col-12 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+  
+                  <button [disabled]="isLoading" type="submit" class="btn btn-primary float-right ml-1">
+                    <i *ngIf="!isLoading" class="fa fa-save"></i>
+                    <i *ngIf="isLoading" class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size: 20px;"></i>
+                    &nbsp;Save
+                  </button>
+                  <a routerLink="/warehouse" type="button" class="btn btn-secondary float-right"><i
+                      class="fa fa-close"></i>&nbsp;Cancel</a>
+                </div>
+              </div>
+  
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--/.col-->
+    </div>
+  </div>

@@ -1,0 +1,15 @@
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\bin\Debug\netstandard2.0\BaseProject.Domain.deps.json
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\bin\Debug\netstandard2.0\BaseProject.Domain.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\bin\Debug\netstandard2.0\BaseProject.Domain.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\bin\Debug\netstandard2.0\Whoever.Common.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\bin\Debug\netstandard2.0\Whoever.Entities.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\bin\Debug\netstandard2.0\Whoever.Common.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\bin\Debug\netstandard2.0\Whoever.Entities.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\obj\Debug\netstandard2.0\BaseProject.Domain.csprojAssemblyReference.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\obj\Debug\netstandard2.0\BaseProject.Domain.csproj.CoreCompileInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\obj\Debug\netstandard2.0\EFCoreSqlServerNetTopologySuite.cs
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\obj\Debug\netstandard2.0\BaseProject.Domain.AssemblyInfoInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\obj\Debug\netstandard2.0\BaseProject.Domain.AssemblyInfo.cs
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\obj\Debug\netstandard2.0\BaseProject.Domain.csproj.CopyComplete
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\obj\Debug\netstandard2.0\BaseProject.Domain.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\BaseProject.Domain\obj\Debug\netstandard2.0\BaseProject.Domain.pdb

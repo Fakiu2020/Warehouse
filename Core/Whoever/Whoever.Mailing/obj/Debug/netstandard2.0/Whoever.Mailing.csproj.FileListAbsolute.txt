@@ -1,0 +1,9 @@
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing\bin\Debug\netstandard2.0\Whoever.Mailing.deps.json
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing\bin\Debug\netstandard2.0\Whoever.Mailing.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing\bin\Debug\netstandard2.0\Whoever.Mailing.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing\obj\Debug\netstandard2.0\Whoever.Mailing.csprojAssemblyReference.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing\obj\Debug\netstandard2.0\Whoever.Mailing.csproj.CoreCompileInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing\obj\Debug\netstandard2.0\Whoever.Mailing.AssemblyInfoInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing\obj\Debug\netstandard2.0\Whoever.Mailing.AssemblyInfo.cs
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing\obj\Debug\netstandard2.0\Whoever.Mailing.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Mailing\obj\Debug\netstandard2.0\Whoever.Mailing.pdb

@@ -1,0 +1,119 @@
+<form
+  [formGroup]="createUserForm"
+  (ngSubmit)="save()"
+  class="text-center border border-light p-5 form"
+>
+  <p class="h4 mb-4">Create User</p>
+
+  <mat-form-field class="full-width-input">
+    <input matInput 
+           placeholder="First Name" 
+           
+           [value]="createUserForm.get('firstName').value | titlecase"
+
+           formControlName="firstName" />
+    
+           <mat-error *ngIf="createUserForm.get('firstName').errors">
+      Firstname is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="full-width-input">
+    <input matInput placeholder="Last Name" 
+           [value]="createUserForm.get('lastName').value | titlecase"
+           formControlName="lastName" />
+
+    <mat-error *ngIf="createUserForm.get('lastName').errors">
+      Lastname is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="full-width-input">
+    <input matInput placeholder="Email" formControlName="email"  />
+    <mat-error *ngIf="f.email.errors && f.email.errors.required">
+      Email is required
+    </mat-error>
+
+    <mat-error *ngIf="f.email.errors && f.email.errors.email">
+      Email must be a valid email address
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="full-width-input">
+    <input
+      matInput
+      placeholder="Confirm Email"
+      formControlName="confirmEmail"
+    />
+    <mat-error
+      *ngIf="
+        createUserForm.get('confirmEmail').errors &&
+        f.confirmEmail.errors.mustMatch
+      "
+    >
+      Confirm paassword must match
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="full-width-input">
+    <input
+      matInput
+      placeholder="Password"
+      formControlName="password"
+      type="password"
+    />
+
+    <mat-error *ngIf="f.password.errors && f.password.errors.required">
+      Password is required
+    </mat-error>
+
+    <mat-error *ngIf="f.password.hasError('minlength')">
+      Password must be at least 4 characters
+    </mat-error>
+
+    <mat-error *ngIf="f.password.hasError('maxlength')">
+      Password cannot exceed 10 characters
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="full-width-input">
+    <input
+      matInput
+      placeholder="Confirm Password"
+      type="password"
+      formControlName="confirmPassword"
+    />
+    <mat-error
+      *ngIf="f.confirmPassword.errors && f.confirmPassword.errors.mustMatch"
+    >
+      Passwords must match
+    </mat-error>
+  </mat-form-field>
+
+  <div class="radio-roles text-left">
+      <label>Roles: </label>
+      <mat-checkbox formControlName="roles" [(ngModel)]=role.checked value="role.name" *ngFor="let role of roles">
+          {{role.name}}
+      </mat-checkbox>
+    </div>
+
+  <div >
+    <button
+      mat-raised-button
+      color="primary"
+      class="btn-large-50"
+      type="submit"
+    >
+      Save
+    </button>
+    <button
+      mat-raised-button
+      color=""
+      class="btn-large-50"
+      type="button"
+      (click)="cancel()"
+    >
+      Cancel
+    </button>
+  </div>
+</form>

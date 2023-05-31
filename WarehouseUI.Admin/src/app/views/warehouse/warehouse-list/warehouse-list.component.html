@@ -1,0 +1,108 @@
+<div class="row">
+    <div class="col-12 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+      <a routerLink="create" type="button" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;Create</a>
+    </div>
+  </div>
+  
+  <br />
+  
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Warehouse
+        </div>
+        <div class="card-body">
+          <form [formGroup]="searchForm" (ngSubmit)="search()" #ngForm="ngForm">
+            <div class="row mb-3">
+  
+              <div class="col-md-5">
+                <label for="select" class="col-form-label"> </label>
+                <input formControlName="criteria" type="text" placeholder="Search by code, name"
+                  class="form-control" />
+              </div>
+  
+              <div class="col-md-4 center-vertical">
+                <button [disabled]="isLoading" type="submit" class="btn btn-primary ml-1 mt-3 ">
+                  <i class="cil-search"></i>
+                  &nbsp;Search
+                </button>
+                <button [disabled]="isLoading" (click)="clearFilters()" type="button" class="btn btn-secondary ml-1 mt-3 ">
+                  <i class="fa fa-filter"></i>
+                  &nbsp;Clear
+                </button>
+
+               
+              </div>
+  
+   
+  
+            </div>
+          </form>
+          <table class="table">
+            <thead>
+              <tr>
+                <th sortable="name" scope="col" (sort)="onSort($event)">Code</th>
+                <th sortable="name" scope="col" (sort)="onSort($event)">Name</th>
+                <th sortable="CategoryName" scope="col" (sort)="onSort($event)">Address</th>
+                <th sortable="description" scope="col" (sort)="onSort($event)">State</th>
+                <th sortable="MeasuresUnit" scope="col" (sort)="onSort($event)">County</th>
+                <th sortable="MeasuresUnit" scope="col" (sort)="onSort($event)">Zip</th>
+                <th>Actions</th>
+  
+              </tr>
+            </thead>
+            <tbody>
+  
+              <tr class="text-center" *ngIf="!isLoading && !products.length">
+                <td colspan="12">
+                  <b>No se encontraron resultados</b>
+                </td>
+              </tr>
+              <tr class="text-center" *ngIf="isLoading">
+                <td colspan="12">
+                  <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                </td>
+              </tr>
+              <tr *ngFor="let item of products">
+                <td>{{ item.code }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.address }}</td>
+                <td>{{ item.state }}</td>
+                <td>{{ item.county }}</td>
+                <td>{{ item.zip }}</td>
+  
+                <td>
+                  <div class="btn-group btn-group-sm" role="group">
+                    
+                    <a [routerLink]="['edit/', item.warehouseId]" type="button" class="btn btn-sm btn-primary mr-3">
+                      <i class="fa fa-pencil"></i>
+                    </a>
+  
+                    <button (click)="openRemoveModal(item.warehouseId)" type="button" class="btn btn-sm btn-danger">
+                      <i class="fa fa-trash"></i>
+                    </button>
+
+                    <button (click)="dowloadFile(item)" [disabled]="!item.hasImportedFile" type="button" class="btn btn-sm btn-success ml-3">
+                      <i *ngIf="!item.loadingExcel" class="fa fa-file-excel-o"></i>
+                      <i
+                      *ngIf="item.loadingExcel"
+                      class="fa fa-spinner fa-spin fa-3x fa-fw"
+                      style="font-size: 20px"
+                    ></i>
+                    </button>
+
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+  
+          <pagination class="d-flex justify-content-center" [totalItems]="filters.totalItems" firstText="First" lastText="Last"
+            [itemsPerPage]="filters.pageSize" (pageChanged)="pageChanged($event)" [boundaryLinks]="true"
+            [directionLinks]="true" [maxSize]="10" previousText="&lsaquo;" nextText="&rsaquo;">
+          </pagination>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\bin\Debug\netstandard2.0\Whoever.Data.EntityFramework.deps.json
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\bin\Debug\netstandard2.0\Whoever.Data.EntityFramework.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\bin\Debug\netstandard2.0\Whoever.Data.EntityFramework.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\bin\Debug\netstandard2.0\Whoever.Common.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\bin\Debug\netstandard2.0\Whoever.Data.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\bin\Debug\netstandard2.0\Whoever.Entities.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\bin\Debug\netstandard2.0\Whoever.Data.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\bin\Debug\netstandard2.0\Whoever.Common.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\bin\Debug\netstandard2.0\Whoever.Entities.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\obj\Debug\netstandard2.0\Whoever.Data.EntityFramework.csprojAssemblyReference.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\obj\Debug\netstandard2.0\Whoever.Data.EntityFramework.csproj.CoreCompileInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\obj\Debug\netstandard2.0\Whoever.Data.EntityFramework.AssemblyInfoInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\obj\Debug\netstandard2.0\Whoever.Data.EntityFramework.AssemblyInfo.cs
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\obj\Debug\netstandard2.0\Whoever.Data.EntityFramework.csproj.CopyComplete
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\obj\Debug\netstandard2.0\Whoever.Data.EntityFramework.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data.EntityFramework\obj\Debug\netstandard2.0\Whoever.Data.EntityFramework.pdb

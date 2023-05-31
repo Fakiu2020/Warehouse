@@ -1,0 +1,55 @@
+
+<form [formGroup]="updateUserForm" (ngSubmit)="updateUser()"  class="text-center border border-light p-5 form">
+    <p class="h4 mb-4">Edit User</p>
+
+    <mat-form-field class="full-width-input">
+        <input matInput placeholder="First Name" 
+              formControlName="firstName"
+              [value]="updateUserForm.get('firstName').value | titlecase" />
+        <mat-error *ngIf="updateUserForm.get('firstName').errors">Firstname is required</mat-error>
+    </mat-form-field>
+
+
+    <mat-form-field class="full-width-input">
+        <input matInput placeholder="Last Name" formControlName="lastName" 
+              [value]="updateUserForm.get('lastName').value | titlecase"/>
+        <mat-error *ngIf="updateUserForm.get('lastName').errors">lastName is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width-input">
+        <input matInput placeholder="Email" formControlName="email" />
+        <mat-error *ngIf="f.email.errors && f.email.errors.required">
+          Email is required
+        </mat-error>
+    
+        <mat-error *ngIf="f.email.errors && f.email.errors.email">
+          Email must be a valid email address
+        </mat-error>
+      </mat-form-field>
+
+      <div class="radio-roles text-left" >
+          <label>Roles: </label>        
+          <mat-checkbox formControlName="roles" [(ngModel)]=role.checked value="role.name" *ngFor="let role of roles">
+              {{role.name}}
+          </mat-checkbox>
+      </div>
+      <div >
+          <button
+            mat-raised-button
+            color="primary"
+            class="btn-large-50"
+            type="submit"
+          >
+            Save
+          </button>
+          <button
+            mat-raised-button            
+            class="btn-large-50"
+            type="button"
+            (click)="cancel()"
+          >
+            Cancel
+          </button>
+        </div>
+
+</form>

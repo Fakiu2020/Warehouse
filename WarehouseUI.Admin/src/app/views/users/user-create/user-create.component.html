@@ -1,0 +1,228 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Create User </strong>
+        </div>
+        <div class="card-body">
+          <form
+            [formGroup]="createUserForm"
+            (ngSubmit)="create()"
+            #ngForm="ngForm"
+          >
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-col-form-label">Name</label>
+                  <input
+                    [ngClass]="{
+                      'is-invalid':
+                        createUserForm.controls.firstName.errors &&
+                        ngForm.submitted
+                    }"
+                    type="text"
+                    formControlName="firstName"
+                    class="form-control"
+                  />
+
+                  <div
+                    class="invalid-feedback"
+                    *ngIf="
+                      createUserForm.controls.firstName.errors &&
+                      ngForm.submitted
+                    "
+                  >
+                    This field is required
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-col-form-label">Last Name</label>
+                  <input
+                    [ngClass]="{
+                      'is-invalid':
+                        createUserForm.controls.lastName.errors &&
+                        ngForm.submitted
+                    }"
+                    type="text"
+                    formControlName="lastName"
+                    class="form-control"
+                  />
+
+                  <div
+                    class="invalid-feedback"
+                    *ngIf="
+                      createUserForm.controls.lastName.errors &&
+                      ngForm.submitted
+                    "
+                  >
+                    This field  is required.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-col-form-label">Email</label>
+                  <input
+                    [ngClass]="{
+                      'is-invalid':
+                        createUserForm.controls.email.errors && ngForm.submitted
+                    }"
+                    type="text"
+                    formControlName="email"
+                    class="form-control"
+                  />
+
+                  <div
+                    class="invalid-feedback"
+                    *ngIf="
+                      createUserForm.controls.email.errors && ngForm.submitted
+                    "
+                  >
+                    <div *ngIf="createUserForm.controls.email.errors.required">
+                      This field is required.
+                    </div>
+                    <div *ngIf="createUserForm.controls.email.errors.email">
+                      Enter a valid email please.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group ">
+                  <label class="form-col-form-label">
+
+                  Roles
+                  </label>
+                  
+                  <ng-select  
+                             [items]="roles"
+                              bindLabel="name"
+                              bindValue="name"
+                              [selectOnTab]="true"
+                              placeholder="Seleccione Roles"
+                              appendTo="body"
+                              [multiple]="true"
+                              formControlName="roles">
+                  </ng-select>
+                  
+
+                  <div class="error-required" *ngIf="createUserForm.controls.roles.errors && ngForm.submitted">
+                    This field is required.
+                  </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-col-form-label">Password</label>
+                  <input
+                    [ngClass]="{
+                      'is-invalid':
+                        createUserForm.controls.password.errors &&
+                        ngForm.submitted
+                    }"
+                    type="password"
+                    formControlName="password"
+                    class="form-control"
+                  />
+
+                  <div
+                    class="invalid-feedback"
+                    *ngIf="
+                      createUserForm.controls.password.errors &&
+                      ngForm.submitted
+                    "
+                  >
+                    <div
+                      *ngIf="createUserForm.controls.password.errors.required"
+                    >
+                      This field is required.
+                    </div>
+                    <div
+                      *ngIf="
+                        createUserForm.controls.password.hasError('minlength')
+                      "
+                    >
+                    Password must have at least 8 characters.
+                    </div>
+
+                    <div
+                      *ngIf="
+                        createUserForm.controls.password.hasError('maxlength')
+                      "
+                    >
+                    Password cannot exceed 10 characters.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-col-form-label">Confirm Password</label>
+                  <input
+                    [ngClass]="{
+                      'is-invalid':
+                        createUserForm.controls.confirmPassword.errors && ngForm.submitted
+                    }"
+                    type="password"
+                    formControlName="confirmPassword"
+                    class="form-control"
+                  />
+
+                  <div
+                    class="invalid-feedback"
+                    *ngIf="
+                      createUserForm.controls.confirmPassword.errors && ngForm.submitted
+                    "
+                  >
+                    <div *ngIf="createUserForm.controls.confirmPassword.errors.mustMatch">
+                      Password and confirm password must be the same.                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-12 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+                <button
+                  [disabled]="isLoading"
+                  type="submit"
+                  class="btn btn-primary float-right ml-1"
+                >
+                  <i *ngIf="!isLoading" class="fa fa-save"></i>
+                  <i
+                    *ngIf="isLoading"
+                    class="fa fa-spinner fa-spin fa-3x fa-fw"
+                    style="font-size: 20px"
+                  ></i>
+                  &nbsp;Save
+                </button>
+                <a
+                  routerLink="/users"
+                  type="button"
+                  class="btn btn-secondary float-right"
+                  ><i class="fa fa-close"></i>&nbsp;Cancel</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+</div>

@@ -1,0 +1,129 @@
+<div class="animated fadeIn">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <strong>Reportes </strong>
+          </div>
+          <div class="card-body">
+        
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="form-group">
+                    <label class="form-col-form-label">Tipo de Reporte</label>
+                    <select
+                      (ngModelChange)="reportTypeChange()"
+                      id="select1"
+                      name="select1"
+                      class="form-control"
+                    >
+                      <option [value]="null" disabled>
+                        Seleccione tipo de reporte
+                      </option>
+                      <option
+                        *ngFor="let item of reportsType"
+                        [value]="item.id"
+                      >
+                        {{ item.description }}
+                      </option>
+                    </select>
+  
+                
+                  </div>
+                </div>
+
+
+                <div class="col-sm-3">
+                    <div class="form-group">
+                      <label class="form-col-form-label">Tipo de Entidad</label>
+                      <select
+                        (ngModelChange)="reportTypeChange()"
+                        id="select2"
+                        name="select2"                        
+                        class="form-control"
+                      >
+                        <option [value]="null" disabled>
+                          Seleccione Entidad
+                        </option>
+                        <option
+                          *ngFor="let item of entitiesType"
+                          [value]="item.id"
+                        >
+                          {{ item.description }}
+                        </option>
+                      </select>
+    
+                  
+                    </div>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <div class="form-group">
+                      <label class="form-col-form-label">Fecha Desde</label>
+                     
+                      <div class="input-group">
+                        <input 
+                          type="text" #dp="bsDatepicker" class="form-control" bsDatepicker [bsConfig]="bsConfig">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button" (click)="dp.toggle()"
+                            [attr.aria-expanded]="dp.isOpen">
+                            <span class="fa fa-calendar "></span>
+                          </button>
+                        </div>
+                      </div>
+                  
+                    </div>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <div class="form-group">
+                      <label class="form-col-form-label">Fecha Hasta</label>
+                     
+                      <div class="input-group">
+                        <input 
+                          type="text" #dp1="bsDatepicker" class="form-control" bsDatepicker [bsConfig]="bsConfig">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button" (click)="dp1.toggle()"
+                            [attr.aria-expanded]="dp1.isOpen">
+                            <span class="fa fa-calendar "></span>
+                          </button>
+                        </div>
+                      </div>
+    
+                  
+                    </div>
+                </div>
+
+                <div class="col-sm-2  center-vertical">
+                    <button  (click)="clearFilters()" type="button" class="btn btn-secondary ml-1 mt-3 ">
+                        <i class="fa fa-close "></i>
+                        &nbsp;Borrar Filtros
+                      </button>
+                </div>
+              
+              </div>
+
+              
+              <div class="row buttons" >
+                <div class="col-md-12" >
+                    <button type="button" class="btn btn-primary ml-1 mt-3 ">
+                      <i class="cil-search"></i>
+                      &nbsp;Buscar
+                    </button>
+                   
+                    <button  type="button" class="btn btn-success ml-1 mt-3">
+                      <i  *ngIf="false" class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size: 20px;"></i>   
+                      <span class="fa fa-file-excel-o"></span> EXCEL
+                    </button>
+                  </div>  
+      
+              </div>
+          </div>
+        </div>
+      </div>
+      <!--/.col-->
+    </div>
+  </div>
+  

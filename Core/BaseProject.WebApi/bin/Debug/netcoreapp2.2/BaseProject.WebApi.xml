@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BaseProject.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:BaseProject.WebApi.Controller.RolesController.GetAll(BaseProject.Application.Roles.GetAllRoles.GetRolesListQuery)">
+            <summary>
+            Get all roles.
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseProject.WebApi.Controller.UserController.GetAll(BaseProject.Application.Users.Queries.GetAllUsers.GetUserListQuery)">
+            <summary>
+            Get all users.
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseProject.WebApi.Controller.UserController.Get(System.Int32)">
+            <summary>
+            Get user by id.
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- El comentario XML con formato incorrecto se ha omitido para el miembro "M:BaseProject.WebApi.Controller.UserController.Update(BaseProject.Application.Users.Commands.UpdateUser.UpdateUserCommand)" -->
+        <!-- El comentario XML con formato incorrecto se ha omitido para el miembro "M:BaseProject.WebApi.Controller.UserController.Delete(System.Int32)" -->
+        <member name="M:BaseProject.WebApi.Extensions.ApplicationBuilderExtension.UseStaticFilesWithCacheControl(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Uses the static files middleware to serve static files. Also adds the Cache-Control and Pragma HTTP
+            headers. The cache duration is controlled from configuration.
+            See http://andrewlock.net/adding-cache-control-headers-to-static-files-in-asp-net-core/.
+            </summary>
+        </member>
+        <member name="M:BaseProject.WebApi.Extensions.ServiceCollectionExtension.AddAntiforgerySecurely(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the anti-forgery tokens for better security. See:
+            http://www.asp.net/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages
+            </summary>
+            <param name="services">The services collection or IoC container.</param>
+        </member>
+        <member name="M:BaseProject.WebApi.Extensions.ServiceCollectionExtension.AddCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures caching for the application. Registers the <see cref="!:IDistrbutedCache"/> and
+            <see cref="!:IMemoryCache"/> types with the services collection or IoC container. The
+            <see cref="!:IDistrbutedCache"/> is intended to be used in cloud hosted scenarios where there is a shared
+            cache, which is shared between multiple instances of the application. Use the <see cref="!:IMemoryCache"/>
+            otherwise.
+            </summary>
+            <param name="services">The services collection or IoC container.</param>
+        </member>
+        <member name="M:BaseProject.WebApi.Extensions.ServiceCollectionExtension.AddOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Configures the settings by binding the contents of the config.json file to the specified Plain Old CLR
+            Objects (POCO) and adding <see cref="T:Microsoft.Extensions.Options.IOptionsSnapshot`1"/> objects to the services collection.
+            </summary>
+            <param name="services">The services collection or IoC container.</param>
+            <param name="configuration">Gets or sets the application configuration, where key value pair settings are
+            stored.</param>
+        </member>
+        <member name="M:BaseProject.WebApi.Extensions.ServiceCollectionExtension.AddCorsPolicies(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add cross-origin resource sharing (CORS) services and configures named CORS policies. See
+            https://docs.asp.net/en/latest/security/cors.html
+            </summary>
+            <param name="services">The services collection or IoC container.</param>
+        </member>
+        <member name="M:BaseProject.WebApi.Extensions.ServiceCollectionExtension.AddBaseProjectDbContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Add DbContext using SQL Server Provider
+            </summary>
+        </member>
+        <member name="M:BaseProject.WebApi.Extensions.ServiceCollectionExtension.AddAutoMapperProfiles(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add DbContext using SQL Server Provider
+            </summary>
+        </member>
+        <member name="M:BaseProject.WebApi.Extensions.ServiceCollectionExtension.AddBaseProjectIdentity(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            For api unauthorised calls return 401 with no body
+            </summary>
+        </member>
+        <member name="M:BaseProject.WebApi.Extensions.ServiceCollectionExtension.AddCustomServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures custom services to add to the ASP.NET Core Injection of Control (IoC) container.
+            </summary>
+            <param name="services">The services collection or IoC container.</param>
+        </member>
+        <member name="T:BaseProject.WebApi.Settings.CacheProfileSettings">
+            <summary>
+            The caching settings for the application.
+            </summary>
+        </member>
+        <member name="P:BaseProject.WebApi.Settings.CacheProfileSettings.CacheProfiles">
+            <summary>
+            Gets or sets the cache profiles (How long to cache things for).
+            </summary>
+        </member>
+        <member name="T:BaseProject.WebApi.Settings.DevelopmentSettings">
+            <summary>
+            The caching settings for the application.
+            </summary>
+        </member>
+        <member name="P:BaseProject.WebApi.Settings.DevelopmentSettings.UseAngularCliServer">
+            <summary>
+            Run net core and angular together(Restart when something change)
+            </summary>
+        </member>
+        <member name="P:BaseProject.WebApi.Settings.DevelopmentSettings.UseProxyToSpaDevelopmentServer">
+            <summary>
+            Run net core and add a proxy for run angular from console.
+            This should be the angular cli url.
+            </summary>
+        </member>
+    </members>
+</doc>

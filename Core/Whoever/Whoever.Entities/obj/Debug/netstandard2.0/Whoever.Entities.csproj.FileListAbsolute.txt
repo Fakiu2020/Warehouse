@@ -1,0 +1,16 @@
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\bin\Debug\netstandard2.0\Whoever.Entities.deps.json
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\bin\Debug\netstandard2.0\Whoever.Entities.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\bin\Debug\netstandard2.0\Whoever.Entities.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\bin\Debug\netstandard2.0\Whoever.Common.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Core.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\bin\Debug\netstandard2.0\Whoever.Common.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.xml
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Core.xml
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\obj\Debug\netstandard2.0\Whoever.Entities.csprojAssemblyReference.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\obj\Debug\netstandard2.0\Whoever.Entities.csproj.CoreCompileInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\obj\Debug\netstandard2.0\Whoever.Entities.AssemblyInfoInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\obj\Debug\netstandard2.0\Whoever.Entities.AssemblyInfo.cs
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\obj\Debug\netstandard2.0\Whoever.Entities.csproj.CopyComplete
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\obj\Debug\netstandard2.0\Whoever.Entities.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Entities\obj\Debug\netstandard2.0\Whoever.Entities.pdb

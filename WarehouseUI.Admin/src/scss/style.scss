@@ -1,0 +1,88 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+
+@import '~ngx-toastr/toastr-bs4-alert';
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+
+
+/*****************  Sortable table demo  ******************* */
+th[sortable] {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  th[sortable].desc:before, th[sortable].asc:before {
+    content: '';
+    display: block;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAmxJREFUeAHtmksrRVEUx72fH8CIGQNJkpGUUmakDEiZSJRIZsRQmCkTJRmZmJgQE0kpX0D5DJKJgff7v+ru2u3O3vvc67TOvsdatdrnnP1Y///v7HvvubdbUiIhBISAEBACQkAICAEhIAQ4CXSh2DnyDfmCPEG2Iv9F9MPlM/LHyAecdyMzHYNwR3fdNK/OH9HXl1UCozD24TCvILxizEDWIEzA0FcM8woCgRrJCoS5PIwrANQSMAJX1LEI9bqpQo4JYNFFKRSvIgsxHDVnqZgIkPnNBM0rIGtYk9YOOsqgbgepRCfdbmFtqhFkVEDVPjJp0+Z6e6hRHhqBKgg6ZDCvYBygVmUoEGoh5JTRvIJwhJo1aUOoh4CLPMyvxxi7EWOMgnCGsXXI1GIXlZUYX7ucU+kbR8NW8lh3O7cue0Pk32MKndfUxQFAwxdirk3fHappAnc0oqDPzDfGTBrCfHP04dM4oTV8cxr0SVzH9FF07xD3ib6xCDE+M+aUcVygtWzzbtGX2rPBrEUYfecfQkaFzYi6HjVnGBdtL7epqAlc1+jRdAap74RrnPc4BCijttY2tRcdN0g17w7HqZrXhdJTYAuS3hd8z+vKgK3V1zWPae0mZDMykadBn1hTQBLnZNwVrJpSe/NwEeDsEwCctEOsJTsgxLvCqUl2ACftEGvJDgjxrnBqkh3ASTvEWrIDQrwrnJpkB3DSDrGW7IAQ7wqnJtkBnLRztejXXVu4+mxz/nQ9jR1w5VB86ejLTFcnDwhzV+F6T+CHZlx6THSjn76eyyBIOPHyDakhBAQAkJACAgBISAEhIAQYCLwC8JxpAmsEGt6AAAAAElFTkSuQmCC') no-repeat;
+    background-size: 22px;
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-left: -22px;
+  }
+  
+  th[sortable].desc:before {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+/*****************  Sortable table  ******************* */
+  
+
+.container-search{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.center-vertical{
+  display: flex;
+  align-items: center;
+}
+
+.center-horizontal{
+  display: flex;
+  justify-content: center;
+}
+
+.NgxEditor__Wrapper {
+  height:auto;
+}
+
+.container-image{
+  border-color: #c3cad8;
+    background-color: #fbfcff;
+    color: #2c3345;
+    border: 1px dashed;
+    min-height: 200px;
+}
+
+.container-image .is-invalid {
+  color: red;
+}
+
+.error-required{
+  font-size: 80%;
+    color: #f86c6b;
+    margin-top:0.25em;
+}
+
+.is-required:after {
+  content: '*';
+  margin-left: 3px;
+  color: red;
+  font-weight: bold;
+}
+
+agm-map {
+  height: 300px;
+}

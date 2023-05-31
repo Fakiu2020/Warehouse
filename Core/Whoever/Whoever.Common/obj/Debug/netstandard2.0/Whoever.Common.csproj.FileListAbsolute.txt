@@ -1,0 +1,12 @@
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\bin\Debug\netstandard2.0\Whoever.Common.deps.json
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\bin\Debug\netstandard2.0\Whoever.Common.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\bin\Debug\netstandard2.0\Whoever.Common.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Core.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Core.xml
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\obj\Debug\netstandard2.0\Whoever.Common.csprojAssemblyReference.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\obj\Debug\netstandard2.0\Whoever.Common.csproj.CoreCompileInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\obj\Debug\netstandard2.0\Whoever.Common.AssemblyInfoInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\obj\Debug\netstandard2.0\Whoever.Common.AssemblyInfo.cs
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\obj\Debug\netstandard2.0\Whoever.Common.csproj.CopyComplete
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\obj\Debug\netstandard2.0\Whoever.Common.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Common\obj\Debug\netstandard2.0\Whoever.Common.pdb

@@ -1,0 +1,1 @@
+TEMPLATE ADMIN URL : https://coreui.io/angular/

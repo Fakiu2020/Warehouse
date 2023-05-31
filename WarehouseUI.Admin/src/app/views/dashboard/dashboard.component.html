@@ -1,0 +1,196 @@
+<div class="animated fadeIn">
+  
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Nearest warehouse calculation
+        </div>
+        <div class="card-body">
+          <form [formGroup]="addressForm" (ngSubmit)="getDetailAddressLocation()" #ngForm="ngForm">
+            <div class="row mb-3">
+  
+              <div class="col-md-5">
+                <label for="select" class="col-form-label"> </label>
+                <input formControlName="address" type="text" placeholder="Enter an address"
+                  class="form-control" />
+              </div>
+              
+              <div class="col-md-4 center-vertical">
+                <button [disabled]="isLoading" type="submit" class="btn btn-primary ml-1 mt-3 ">
+                  <i class="fa fa-search"></i>
+                  &nbsp;Search
+                </button>
+                <button [disabled]="isLoading" (click)="clearFilters()" type="button" class="btn btn-secondary ml-1 mt-3 ">
+                  <i class="fa fa-filter"></i>
+                  &nbsp;Clear
+                </button>
+
+         
+              </div>
+             
+  
+   
+  
+            </div>
+          </form>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="origin.name" class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header font-weight-bold">
+          Can you confirm origin location?
+        </div>
+        <div class="card-body">
+         
+          <br>
+          <table class="table table-responsive-sm table-hover table-outline mb-0">
+            <thead class="thead-light">
+              <tr>
+                
+                <th>Address</th>
+                
+                <th class="text-center">Postal Code</th>
+                <th class="text-center">District</th>
+                <th>Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngIf="!origin.address && !isLoading">
+                <td class="text-center" colspan="6">
+
+                  <strong>Not results</strong>
+
+                </td>
+              </tr>
+
+              <tr *ngIf="isLoading">
+                <td class="text-center" colspan="6">
+                  
+                  <strong>Loading...</strong>
+                </td>
+              </tr>
+
+              <tr>
+                
+                <td>
+                  <div>{{origin.address.formattedAddress}}</div>
+                  <div class="small text-muted">
+                    <i class="icon-location-pin"></i> <span>{{origin.address.countryRegion}}, </span>
+                    {{origin.address.locality}}
+                  </div>
+                </td>
+    
+                <td class="text-center">
+                    <div >
+                      {{origin.address.postalCode}}
+                  </div>
+                </td>
+                <td class="text-center">
+                  {{origin.address.adminDistrict}}
+                </td>
+
+
+
+                <td>
+                  <button (click)="calculate()" [disabled]="isConfirmOriginLocation" type="button" class="btn btn-block btn-outline-primary">Confirm</button>
+                </td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+
+
+
+    <tabset *ngIf="wareshouse.length">
+    <tab>
+      
+      <div class="list-group list-group-accent" >
+        <div class="list-group-item list-group-item-accent-success bg-light text-center font-weight-bold text-muted text-uppercase small">Warehouse</div>
+        <div class="list-group-item list-group-item-accent-success list-group-item-divider" *ngFor="let item of wareshouse ; let i = index">
+       
+          <div><span class="badge bg-primary">{{i+1}}</span> {{item.name}} - 
+            <strong>{{item.address}}, {{item.state}}</strong>
+          </div>
+       
+          <small class="text-muted">
+            <i class="icon-location-pin"></i>  Distance {{item.kilometerDisplay}}</small>
+        </div>
+        
+    
+      </div>
+
+      <br/>
+      <div class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">Locations</div>
+      <div class="list-group-item list-group-item-accent-danger list-group-item-divider">
+        <div *ngIf="origin.lat"> 
+          <agm-map 
+          [latitude]="origin.lat"
+          [longitude]="origin.lng"
+          [zoom]="zoom"
+          [disableDefaultUI]="false"
+          [zoomControl]="true"
+          (mapClick)="mapClicked($event)">
+        
+          <agm-marker 
+              *ngFor="let m of wareshouse; let i = index"
+              (markerClick)="clickedMarker(m.name, i)"
+              [latitude]="m.latitude"
+              [longitude]="m.longitude"
+              [label]="m.name"
+              [markerDraggable]="true"
+              (dragEnd)="markerDragEnd(m, $event)">
+              
+            <agm-info-window [disableAutoPan]="true">
+              <strong>{{m.name}}</strong>
+            </agm-info-window>
+        
+            
+            
+          </agm-marker>
+          
+          <agm-circle [latitude]="origin.lat" [longitude]="origin.lng" 
+              [radius]="5000"
+              [fillColor]="'red'"
+              [circleDraggable]="true"
+              [editable]="true">
+          </agm-circle>
+        
+          <agm-direction 
+          [origin]="origin" 
+          [destination]="destination"
+        ></agm-direction>
+        
+        </agm-map>
+        </div>
+      </div>
+
+    </tab>
+
+
+  </tabset>
+
+  
+
+
+
+
+</div>
+
+  
+
+
+
+
+  
+  

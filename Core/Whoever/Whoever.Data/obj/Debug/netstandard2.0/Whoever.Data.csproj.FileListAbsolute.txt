@@ -1,0 +1,9 @@
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data\bin\Debug\netstandard2.0\Whoever.Data.deps.json
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data\bin\Debug\netstandard2.0\Whoever.Data.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data\bin\Debug\netstandard2.0\Whoever.Data.pdb
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data\obj\Debug\netstandard2.0\Whoever.Data.csprojAssemblyReference.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data\obj\Debug\netstandard2.0\Whoever.Data.csproj.CoreCompileInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data\obj\Debug\netstandard2.0\Whoever.Data.AssemblyInfoInputs.cache
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data\obj\Debug\netstandard2.0\Whoever.Data.AssemblyInfo.cs
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data\obj\Debug\netstandard2.0\Whoever.Data.dll
+D:\Development\Devlights\BaseProject\BaseProject\Core\Whoever\Whoever.Data\obj\Debug\netstandard2.0\Whoever.Data.pdb
